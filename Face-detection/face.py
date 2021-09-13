@@ -14,7 +14,7 @@ while True:
 
     faces = face_cascade.detectMultiScale(gray, 1.1, 4)
     for (x, y, w, h) in faces:
-        cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2)
+        cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 3)
         print((x+w/2), (y+h)/2)
 
     cv2.imshow("My Sunflower", frame)
