@@ -4,8 +4,8 @@ face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 cap = cv2.VideoCapture(0)
 
-cap.set(cv2.CAP_PROP_FRAME_WIDTH, 3200)
-cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1800)
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1600)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 900)
 
 while True:    
     ret, frame = cap.read()
