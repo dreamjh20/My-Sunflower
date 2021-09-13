@@ -16,6 +16,10 @@ while True:
     for (x, y, w, h) in faces:
         cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 3)
         print((x+w/2), (y+h)/2)
+        
+        m = int((x+x+w)/2)
+        n = int((y+y+h)/2)
+        cv2.line(frame, (m, n), (m, n), (255,215,0), 20)
 
     cv2.imshow("My Sunflower", frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):  #q to quit
