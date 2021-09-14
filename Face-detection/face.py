@@ -7,6 +7,7 @@ cap = cv2.VideoCapture(0)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1600)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 900)
 
+
 while True:
     ret, frame = cap.read()
     
