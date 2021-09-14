@@ -3,9 +3,14 @@ import time
 
 ser = serial.Serial('COM7', 9600)
 
+def On_Off(con):
+    return con
+
 while True:
     if ser.readable():
-        val = input()
+        # val = input()
+
+        val = On_Off('1')
 
         if val == '1':
             val = val.encode('utf-8')
