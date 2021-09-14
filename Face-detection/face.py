@@ -24,7 +24,7 @@ while True:
         cv2.line(frame, (center_x, center_y), (center_x, center_y), (255,215,0), 20)
 
     cv2.imshow("My Sunflower", frame)
-    if cv2.waitKey(1) & 0xFF == ord('q'):  #q to quit   
+    if cv2.waitKey(1) & 0xFF == ord('q'):  #q to quit
         break
 
 cap.release()
