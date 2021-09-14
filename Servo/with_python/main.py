@@ -14,8 +14,6 @@ while True:
         # val = input()
 
         # val = On_Off('1')
-        
-        
 
         if val == '1':
             val = val.encode('utf-8')
