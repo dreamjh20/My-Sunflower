@@ -2,7 +2,7 @@ import cv2
 import serial
 import time
 
-ser = serial.Serial('COM7', 9600)
+ser = serial.Serial('COM8', 9600)
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
@@ -39,13 +39,13 @@ while True:
         val = val.encode('utf-8')
         ser.write(val)
         print("LED TURNED ON")
-        time.sleep(0.5)
+        # time.sleep(1)
 
     elif val == '0':
         val = val.encode('utf-8')
         ser.write(val)
         print("LED TURNED OFF")
-        time.sleep(0.5)
+        # time.sleep(1)
 
 cap.release()
 
