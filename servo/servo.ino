@@ -1,6 +1,7 @@
 #define LED 13
 
 int input_data = 0;
+//set 0
 
 void setup() {
   // put your setup code here, to run once:
