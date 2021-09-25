@@ -1,7 +1,6 @@
 #define LED 13
 
-int input_data;
-
+int input_data = 0;
 
 void setup() {
   // put your setup code here, to run once:
@@ -17,7 +16,6 @@ void loop() {
   {
     input_data = Serial.read();
   }
-
   if(input_data == '1')
   {
     digitalWrite(LED, HIGH); // led_on
