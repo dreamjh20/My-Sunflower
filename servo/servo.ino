@@ -14,6 +14,9 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+
+  //LED TEST
+  
   while(Serial.available())
   {
     input_data = Serial.read();
@@ -25,5 +28,24 @@ void loop() {
   else if(input_data == '0')
   {
     digitalWrite(LED, LOW); // led_off
+  }
+
+
+  //SERVO Left -1   Stop 0   Right 1   
+  while(Serial.available())
+  {
+    input_data = Serial.read();
+  }
+  if(input_data == '-1')
+  {
+    
+  }
+  else if(input_data == '1')
+  {
+    
+  }
+  else
+  {
+    //Stop
   }
 }
