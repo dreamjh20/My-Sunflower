@@ -20,6 +20,7 @@ while True:
         
         center_x = int((x+x+w)/2)
         center_y = int((y+y+h)/2)
+        
         cv2.line(frame, (center_x, center_y), (center_x, center_y), (255,215,0), 20)
 
     cv2.imshow("My Sunflower", frame)
